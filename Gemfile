@@ -15,6 +15,19 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# for deployment on Heroku
+gem "heroku"
+
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+
+group :production do
+  #gem 'pg'
+  gem 'thin'
+end
 
 #gem 'pg', :group => :production
 
