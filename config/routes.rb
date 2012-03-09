@@ -1,4 +1,8 @@
 SecondStep::Application.routes.draw do
+  get "facebook_application/index"
+
+  get "home/page"
+
   get "home/presentation"
 
   get "home/facebook"
